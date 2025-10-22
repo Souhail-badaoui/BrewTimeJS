@@ -1,10 +1,9 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+import { View , Text} from "react-native"
 
-export default function App() {
+export default function index (){
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Hello React Native 👋</Text>
+    <View>
+      <Text>hello</Text>
     </View>
-  );
+  )
 }
