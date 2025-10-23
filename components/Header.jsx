@@ -1,16 +1,16 @@
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet  } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
+
+
 export default function Header() {
-  return (
+  return(
     <View style={styles.headerContainer}>
       {/* Logo + Title */}
       <View style={styles.leftSection}>
-        {/* <Image
-          source={require("../assets/logo.png")} 
-          style={styles.logo}
-        /> */}
-        <Text style={styles.title}>BrewTime</Text>
+  
+        <Text style={styles.title}>☕ BrewTime</Text>
+      
       </View>
 
       {/* Menu Icon */}
@@ -18,15 +18,17 @@ export default function Header() {
         <Ionicons name="menu" size={28} color="#fff" />
       </TouchableOpacity>
     </View>
-  );
-}
+  )
+};
+
 
 const styles = StyleSheet.create({
   headerContainer: {
-    alignItems: "center",
+    flexDirection:"row",
+    
     justifyContent: "space-between",
     paddingHorizontal: 20,
-    // paddingVertical: 10,
+    paddingVertical: 10,
     backgroundColor: "#2a1c14", 
   },
   leftSection: {

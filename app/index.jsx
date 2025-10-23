@@ -1,10 +1,15 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+import { View } from "react-native"
+import Header from "../components/Header"
+import TodaysBrew from "../components/TodaysBrew"
+import OrderCard from "../components/OrderCard"
 
-export default function App() {
+
+export default function index() {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Hello React  👋</Text>
+    <View>
+      <Header/>
+      <TodaysBrew/>
+      <OrderCard/>
     </View>
-  );
+  )
 }
