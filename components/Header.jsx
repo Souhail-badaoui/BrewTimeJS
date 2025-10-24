@@ -5,9 +5,9 @@ import { Ionicons } from "@expo/vector-icons";
 
 export default function Header() {
   return(
-    <View style={styles.headerContainer}>
+      <View style={styles.headerContainer}>
       {/* Logo + Title */}
-      <View style={styles.leftSection}>
+       <View style={styles.leftSection}>
   
         <Text style={styles.title}>☕ BrewTime</Text>
       
@@ -17,7 +17,8 @@ export default function Header() {
       <TouchableOpacity style={styles.menuButton}>
         <Ionicons name="menu" size={28} color="#fff" />
       </TouchableOpacity>
-    </View>
+     </View>
+    
   )
 };
 

@@ -1,7 +1,9 @@
 import { View } from "react-native"
 import Header from "../components/Header"
 import TodaysBrew from "../components/TodaysBrew"
-import OrderCard from "../components/OrderCard"
+import Order from "../components/Order"
+import BottomNav from "../components/BottomNav"
+
 
 
 export default function index() {
@@ -9,7 +11,8 @@ export default function index() {
     <View>
       <Header/>
       <TodaysBrew/>
-      <OrderCard/>
+      <Order/>
+      <BottomNav/>
     </View>
   )
 }
