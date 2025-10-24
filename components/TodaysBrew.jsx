@@ -2,9 +2,9 @@ import { View, Text, Image, StyleSheet } from "react-native";
 
 const TodaysBrew = () => {
   return (
+    <View>
+    <Text style={styles.sectionTitle}>Today's Brew</Text>
     <View style={styles.container}>
-   
-      <Text style={styles.sectionTitle}>Today's Brew</Text>
       
       <Image source={require('../assets/coffe.png')} style={styles.image} resizeMode="cover" />
 
@@ -13,9 +13,10 @@ const TodaysBrew = () => {
         <Text style={styles.description}> is simply dummy text 
           of the printing and typesetting industry.
            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-             It has survived not only five centuries, but also the leap into electronic</Text>
+            when an unknown printer took a galley of type and scrambled it to make a type specimen 
+           </Text>
       </View>
+    </View>
     </View>
   );
 };
@@ -26,30 +27,35 @@ const styles = StyleSheet.create({
   container: {
     marginTop: 20,
     alignItems: "center",
+    backgroundColor:"#472719ff",
+    padding:"20",
+    borderRadius: 20
   },
   sectionTitle: {
     fontSize: 22,
     fontWeight: "bold",
-    color: "#4E342E", 
-    marginBottom: 10,
+    color: "#bebebeff", 
+    marginTop: 30,
   },
   image: {
-    width: "90%",
+    width: "320",
     height: 150,
-    borderRadius: 15,
+    position:"relative",
+    bottom:"31",
   },
   textContainer: {
-    marginTop: 15,
     alignItems: "center",
   },
   title: {
+    position:"relative",
+    bottom :"15",
     fontSize: 20,
     fontWeight: "600",
-    color: "#3E2723",
+    color: "#c4c4c4ff",
   },
   description: {
     fontSize: 14,
-    color: "#6D4C41",
+    color: "#b8b6b6ff",
     marginTop: 5,
     textAlign: "center",
     width: "100px",

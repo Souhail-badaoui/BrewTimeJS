@@ -26,11 +26,11 @@ export default OrderCard;
 const styles = StyleSheet.create({
   card: {
     flexDirection: "row",
-    backgroundColor: "#fff",
+    backgroundColor: "#472719ff",
     borderRadius: 15,
     padding: 10,
     marginVertical: 8,
-    marginHorizontal: 15,
+    marginHorizontal: 5,
     shadowColor: "#000",
     shadowOpacity: 0.1,
     shadowOffset: { width: 0, height: 2 },
@@ -38,8 +38,10 @@ const styles = StyleSheet.create({
     elevation: 3, 
   },
   image: {
-    width: 80,
+    width: 100,
     height: 80,
+    position: "relative",
+    top :"10",
     borderRadius: 10,
   },
   info: {
@@ -50,11 +52,11 @@ const styles = StyleSheet.create({
   name: {
     fontSize: 18,
     fontWeight: "600",
-    color: "#3E2723",
+    color: "#b4b4b4ff",
   },
   description: {
     fontSize: 13,
-    color: "#6D4C41",
+    color: "#dadadaff",
     marginVertical: 5,
   },
   button: {

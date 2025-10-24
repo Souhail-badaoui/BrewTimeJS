@@ -28,9 +28,9 @@ const styles = StyleSheet.create({
     flexDirection:"row",
     
     justifyContent: "space-between",
-    paddingHorizontal: 20,
+    paddingHorizontal: 1,
     paddingVertical: 10,
-    backgroundColor: "#2a1c14", 
+    backgroundColor: "#1c100b", 
   },
   leftSection: {
     flexDirection: "row",
