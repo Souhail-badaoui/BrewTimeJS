@@ -4,8 +4,9 @@ export default function MenuScreen() {
   return (
     <ScrollView style={styles.container}>
       {/* Title */}
+      <View>
       <Text style={styles.title}>☕ BrewTime</Text>
-
+      </View>
       {/* Category Tabs */}
       <View style={styles.tabs}>
         <Text style={[styles.tab, styles.activeTab]}>Coffee</Text>
@@ -95,6 +96,7 @@ const styles = StyleSheet.create({
     color: "#ddd",
     fontSize: 14,
     marginVertical: 5,
+    
   },
   button: {
     backgroundColor: "#e67e22",
@@ -107,4 +109,4 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontWeight: "bold",
   },
-});
+})
